@@ -109,7 +109,7 @@ The result format is in the following example.
 
 ## Solution
 
-*In this section, I will note how I think thru the process...*
+*This section outlines my thought process for solving the problem.*
 
 ### Step 1: Identify the Fields Required
 
