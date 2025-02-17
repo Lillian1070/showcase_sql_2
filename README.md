@@ -148,11 +148,9 @@ The temporary table `T` should be similar to what we have below.
 | 2            | Sam   | 60000  | 2             |
 
 
-### Step 3: 
+### Step 3: Main Query
 
-xxxxx
-
-* xxxxxx
+Finally, I can merge the department names into the temp table `T` by using the department ID, so the final table can include the department names, employee names, and salaries as required. Additionally, filtering the table having the ranking number less than or equal to 3 to include only the top 3 salaries in each department. 
 
 ```sql
 SELECT 
@@ -164,8 +162,6 @@ LEFT JOIN Department d ON t.departmentId=d.id
 WHERE rank_in_group <= 3
 ORDER BY d.name, t.salary DESC;
 ```
-
-
 
 
 
