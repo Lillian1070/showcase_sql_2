@@ -115,8 +115,8 @@ The result format is in the following example.
 
 To create the result table with department name, employee name, and top 3 unique salaries in each department, I need to find out the following info: 
 
-* Ranking of unique salaries in each group (see temp table `T`)
-* Merging department name into the Employee table by using department ID (see step 3)
+* Ranking of unique salaries in each group (see temp ranking table `T`)
+* Merging department name into the temp ranking table by using department ID (see step 3)
 
 
 ### Step 2: Create a Temporary Table `T` to Rank Unique Salaries Using `DENSE_RANK()`
