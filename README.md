@@ -119,7 +119,7 @@ To create the result table with department name, employee name, and top 3 unique
 * Merging department name into the Employee table by using department ID (see step 3)
 
 
-### Step 2: Create a Temporary Table `T`
+### Step 2: Create a Temporary Table `T` to Rank Unique Salaries Using `DENSE_RANK()`
 
 To find out the salary ranking in each department, I created a temporary table `t` that ranks salaries in each group using [`DENSE_RANK()`](https://www.geeksforgeeks.org/mysql-ranking-functions/) function. 
 
@@ -150,9 +150,9 @@ The temporary table `T` should be similar to what we have below.
 | 2            | Sam   | 60000  | 2             |
 
 
-### Step 3: Main Query
+### Step 3: Retrieve the Final Table
 
-Finally, I can merge the department names into the temp table `T` by using the department ID, so the final table can include the department names, employee names, and salaries as required. Additionally, filtering the table having the ranking number less than or equal to 3 to include only the top 3 salaries in each department. 
+Finally, I can merge the department names into the temp ranking table `T` using the department ID to include the department names, employee names, and salaries as required. Additionally, I filter the results to include only salaries with a ranking number of 3 or lower in each department.
 
 ```sql
 SELECT 
@@ -209,7 +209,7 @@ ORDER BY d.name, t.salary DESC;
 
 *Note: This section is updated on 02/17/2025.*
 
-While reviewing my SQL query, I realized that the `DENSE_RANK()` function can be performed in a single statement without a `WITH` clause, simplifying the SQL syntax.
+Upon review, I realized that the `DENSE_RANK()` function can be performed in a single statement without a `WITH` clause, making the query more concise.
 
 
 ```sql
