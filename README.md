@@ -121,7 +121,9 @@ To create the result table with department name, employee name, and top 3 unique
 
 ### Step 2: Create a Temporary Table `T`
 
-To find out the salary ranking in each department, I created a temporary table `t` that ranks salaries in each group using [`DENSE_RANK()`](https://www.geeksforgeeks.org/mysql-ranking-functions/) function.
+To find out the salary ranking in each department, I created a temporary table `t` that ranks salaries in each group using [`DENSE_RANK()`](https://www.geeksforgeeks.org/mysql-ranking-functions/) function. 
+
+Please note that compared to `RANK()`, `DENSE_RANK()` ensures unique salaries are ranked without gaps.
 
 ```sql
 WITH 
