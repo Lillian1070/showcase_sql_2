@@ -113,15 +113,15 @@ The result format is in the following example.
 
 ### Step 1: Identify the Fields Required
 
-To create the result table xxxxx, I need to find out the following info: 
+To create the result table with department name, employee name, and top 3 unique salaries in each department, I need to find out the following info: 
 
-* xxxx (see temp table `T`)
-* xxx (see step xxxx)
+* Ranking of unique salaries in each group (see temp table `T`)
+* Merging department name into the Employee table by using department ID (see step 3)
 
 
 ### Step 2: Create a Temporary Table `T`
 
-
+To find out the salary ranking in each department, I created a temporary table `t` that ranks salaries in each group using [`DENSE_RANK()`](https://www.geeksforgeeks.org/mysql-ranking-functions/) function.
 
 ```sql
 WITH 
@@ -211,7 +211,7 @@ ORDER BY d.name, t.salary DESC;
 
 *Note: This section is updated on 02/17/2025.*
 
-While reviewing my SQL query, I realized that the `DENSE_RANK()` logic can be performed in a single statement without a `WITH` clause, simplifying the SQL syntax.
+While reviewing my SQL query, I realized that the `DENSE_RANK()` function can be performed in a single statement without a `WITH` clause, simplifying the SQL syntax.
 
 
 ```sql
