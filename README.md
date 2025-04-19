@@ -4,12 +4,12 @@ This SQL practice problem is based on **[LeetCode SQL 50 - 185. Department Top T
 - **Objective:** Calculate each department's top 3 unique salaries.  
 - **Practice Purpose:** Self-learning and reinforcement of SQL joins, aggregation, and window functions.
 - **Outline:**
-  - Practice (practice problem and query output)
-  - Solution (step-by-step explanation)
-  - Query Optimization (refinement for efficiency and readability)
+  - [**Practice**](#section-1) (practice problem and query output)
+  - [**Solution**](#section-2) (step-by-step explanation)
+  - [**Query Optimization**](#section-3) (refinement for efficiency and readability)
 
 
-## Practice
+## <a name="section-1"></a>🧪 Practice
 
 Table: `Employee`
 
@@ -107,7 +107,7 @@ The result format is in the following example.
 
 
 
-## Solution
+## <a name="section-2"></a>🧠 Solution
 
 *This section outlines my thought process for solving the problem.*
 
@@ -205,7 +205,7 @@ ORDER BY d.name, t.salary DESC;
 | Sales      | Sam      | 60000  |
 
 
-## Query Optimization using MySQL
+## <a name="section-3"></a>🛠️ Query Optimization using MySQL
 
 *Note: This section is updated on 02/17/2025.*
 
