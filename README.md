@@ -1,4 +1,4 @@
-# [SQL] Top 3 Unique Salaries in Each Department
+# [SQL] Identifying the Top 3 Unique Salaries in Each Department
 
 _This SQL practice problem is based on **[LeetCode SQL 50 - 185. Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/description/?envType=study-plan-v2&envId=top-sql-50)**, used here for personal learning and educational purposes._ 
 
