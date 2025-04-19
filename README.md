@@ -1,6 +1,7 @@
 # [SQL] Top 3 Unique Salaries in Each Department
 
-This SQL practice problem is based on **[LeetCode SQL 50 - 185. Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/description/?envType=study-plan-v2&envId=top-sql-50)** 
+_This SQL practice problem is based on **[LeetCode SQL 50 - 185. Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/description/?envType=study-plan-v2&envId=top-sql-50)**, used here for personal learning and educational purposes._ 
+
 - **Objective:** Calculate each department's top 3 unique salaries.  
 - **Practice Purpose:** Self-learning and reinforcement of SQL joins, aggregation, and window functions.
 - **Outline:**
